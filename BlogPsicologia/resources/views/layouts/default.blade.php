@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href={{ asset('site/bootstrap.min.css') }}> 
     <link rel="stylesheet" href={{ asset('css/layoutDefault.css') }}>
+    @yield('css')
 
     <title>@yield('title', 'Uma Dose de Psicologia')</title>
 
