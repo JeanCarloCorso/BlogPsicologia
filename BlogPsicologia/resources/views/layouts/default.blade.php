@@ -45,7 +45,11 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <a class="menuHamburger" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <svg class="bi me-2" width="40" height="40" style="fill: black;">
+                        <rect width="30" height="4" rx="2" style="fill: black;"></rect>
+                        <rect y="10" width="30" height="4" rx="2" style="fill: black;"></rect>
+                        <rect y="20" width="30" height="4" rx="2" style="fill: black;"></rect>
+                    </svg>
                 </a>
                 <a class="navbar-brand custom-navbar-brand" href="/">
                     <img src="/site/img/logo/logo.png" alt="Logo" class="logo-image">
@@ -65,10 +69,8 @@
         </button>
         <ul>
             <li><a href="/">Início</a></li>
-            <li><a href="/categoria/mulher">Mulheres</a></li>
-            <li><a href="/categoria/homem">Homens</a></li>
-            <li><a href="quemsomos.show">Sobre</a></li>
-            <li><a href="contato.show">Contato</a></li>
+            <li><a href="/categoria/mulher">Meu Blog</a></li>
+            <li><a href="/categoria/homem">Sobre Mim</a></li>
         </ul>
     </div>
 
