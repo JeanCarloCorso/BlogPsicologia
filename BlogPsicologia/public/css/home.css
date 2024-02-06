@@ -1,7 +1,7 @@
-/* styles.css */
+/*bloco do banner do site*/
 .background-container {
     position: relative;
-    height: 100vh; /* 100% da altura da viewport */
+    height: 100vh;
     background-image: url('../site/img/homeBackground.png');
     background-position: center;
     background-size: cover;
@@ -14,15 +14,15 @@
 .text-container {
     text-align: center;
     color: white;
-    position: relative; /* Certifique-se de que a posição seja relativa */
-    z-index: 2; /* Coloque o texto acima da imagem de fundo */
+    position: relative;
+    z-index: 2;
 }
 
 .title-container {
-    background-color: rgba(255, 210, 0, 0.7); /* Cor de fundo com transparência para o título */
+    background-color: rgba(255, 210, 0, 0.7);
     padding: 20px;
     border-radius: 5px;
-    display: inline-block; /* Garante que o contêiner se ajuste ao conteúdo */
+    display: inline-block; 
 }
 
 .title {
@@ -42,5 +42,52 @@
     width: 100%;
     height: 2px;
     background-color: white;
-    margin: 5px 0; /* Espaçamento acima e abaixo da barra */
+    margin: 5px 0;
+}
+
+/*bloco dos posts mais recentes*/
+
+.custon-bloco {
+    margin-top: 64px; 
+    text-align: center;
+}
+
+hr.custon {
+    max-width: 110px;
+    border: 4px solid #FFD200;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.custon-row {
+    margin-top: 15px; 
+}
+
+.btn {
+    border-radius: 10px; 
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); 
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.span-resumo {
+    font-size: 0.9em;
+    color: #0c1347 !important;
+    font-weight: bold;
+    text-align: left;
+}
+
+.truncar-1l {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
