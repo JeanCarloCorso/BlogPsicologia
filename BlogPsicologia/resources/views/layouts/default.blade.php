@@ -35,7 +35,7 @@
                         <a href="/categoria/mulher" class="nav-link text-black">MEU BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/categoria/homem" class="nav-link text-black">SOBRE MIM</a>
+                        <a href="{{ route('sobre_mim') }}" class="nav-link text-black">SOBRE MIM</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
         <ul>
             <li><a href="/">Início</a></li>
             <li><a href="/categoria/mulher">Meu Blog</a></li>
-            <li><a href="/categoria/homem">Sobre Mim</a></li>
+            <li><a href="{{ route('sobre_mim') }}">Sobre Mim</a></li>
         </ul>
     </div>
 
@@ -100,12 +100,12 @@
                     <a href="termos.show" class="text-decoration-none text-black">
                         Meu Blog
                     </a><br>
-                    <a href="quemsomos.show" class="text-decoration-none text-black">
+                    <a href="{{ route('sobre_mim') }}" class="text-decoration-none text-black">
                         Sobre Mim
                     </a>
                 </div>
                 <div class="slide3 col-12 col-md-4 text-center">
-                    <a href="contato.show" class="text-decoration-none text-black">
+                    <a href="{{ route('contato') }}" class="text-decoration-none text-black">
                         Contato pelo Site
                     </a><br>
                     E-mail: <a href="mailto:{{ config('app.email') }}" class="text-decoration-none text-black">

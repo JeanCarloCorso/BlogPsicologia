@@ -4,10 +4,6 @@
     <link rel="stylesheet" href={{ asset('css/home.css') }}>
 @endsection
 
-@section('links')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-@endsection
-
 @section('foraContainer')
 
 <div class="background-container">
@@ -107,67 +103,11 @@
     </div>
 </div>
 
-<div class="custon-bloco2 justify-content-center">
-    <br/>
-    <h3>SOBRE MIM</h3>
-    <hr class="custon">
-    <br/>
+@include('includes.sobremim')
 
-    <div class="row g-3">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-            <p class="custon">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra ligula quis mauris malesuada, 
-                a mollis purus finibus. Aliquam suscipit lorem ac libero placerat condimentum. Etiam pellentesque 
-                sed nisl quis iaculis. Nunc metus neque, maximus non ipsum in, convallis dignissim ipsum. In ultricies 
-                nisl dui, at sagittis arcu pretium eget. Nulla commodo ut turpis vitae mattis. Suspendisse et libero 
-                augue. Donec eget tristique libero. 
-            </p>
-            <br/>
-                
-            <div class="social-icons">
-                <a href="{{ config('app.instagram') }}" target="_blank" class="instagram-icon"><i class="fa fa-instagram" ></i></a>
-                <a href="{{ config('app.facebook') }}" target="_blank" class="facebook-icon"><i class="fa fa-facebook"></i></a>
-                <a href="{{ config('app.linkedin') }}" target="_blank" class="linkedin-icon"><i class="fa fa-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-            <div>
-                <img class="custom-img2" src="/site/img/homeBackground.png">
-            </div>
-            <br/>
-        </div>
+@include('includes.contato')
 
-    </div>
-</div>
 
-<div class="row g-3 custon-row-sobre justify-content-center" style="margin-bottom: 50px;">
-    <form class="col-sm-10 col-md-8 col-lg-6" method="post" >
-        @csrf
-        <div class="custon-bloco">
-            <h3>CONTATO</h3><br>
-        </div>
-
-        <div class="form-floating mb-3">
-            <input type="text" name="nome" id="txtNomeCompleto" class="form-control" placeholder=" " autofocus>
-            <label for="txtNomeCompleto">Nome Completo</label>
-        </div>
-
-        <div class="form-floating mb-3">
-            <input type="email" id="txtEmail" name="email" class="form-control" placeholder=" ">
-            <label for="txtEmail">E-mail</label>
-        </div>
-
-        <div class="form-floating mb-3">
-            <textarea id="txtMensagem" name="mensagem" class="form-control" placeholder=" "
-                style="height: 200px;"></textarea>
-            <label for="txtMensagem">Mensagem</label>
-        </div>
-
-        <div class="col-12">
-            <button type="submit" class="btn btn-lg btn-custon w-100">Enviar Mensagem</button>
-        </div>
-    </form>
-</div>
 
 @endsection
 

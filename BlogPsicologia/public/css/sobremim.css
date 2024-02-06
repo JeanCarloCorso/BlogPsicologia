@@ -1,0 +1,39 @@
+/*bloco do "Sobre Mim"*/
+
+.custon-bloco2 {
+    margin-top: 64px; 
+    text-align: center; 
+    background-color: #f1f1f1; 
+}
+
+.custom-img2 {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+p.custon {
+    text-align: left; 
+    margin-left: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px; /* Espaço entre os ícones */
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-icon {
+    color: #e4405f; /* Cor do Instagram */
+}
+
+.facebook-icon {
+    color: #3b5998; /* Cor do Facebook */
+}
+
+.linkedin-icon {
+    color: #0077b5; /* Cor do LinkedIn */
+}
+
