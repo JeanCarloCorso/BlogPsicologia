@@ -14,6 +14,7 @@
     <title>@yield('title', 'Uma Dose de Psicologia')</title>
 
     <link rel="icon" type="image/x-icon" href={{ asset('site/img/favicon/favicon.ico') }}>
+    @yield('links')
     
 </head>
 

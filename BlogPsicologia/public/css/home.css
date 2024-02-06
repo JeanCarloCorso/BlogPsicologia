@@ -140,6 +140,27 @@ p.custon {
     margin-left: 10px;
 }
 
+.social-icons {
+    display: flex;
+    gap: 30px; /* Espaço entre os ícones */
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-icon {
+    color: #e4405f; /* Cor do Instagram */
+}
+
+.facebook-icon {
+    color: #3b5998; /* Cor do Facebook */
+}
+
+.linkedin-icon {
+    color: #0077b5; /* Cor do LinkedIn */
+}
+
+
 /*bloco do contato*/
 
 .btn-custon {

@@ -4,6 +4,10 @@
     <link rel="stylesheet" href={{ asset('css/home.css') }}>
 @endsection
 
+@section('links')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@endsection
+
 @section('foraContainer')
 
 <div class="background-container">
@@ -119,6 +123,12 @@
                 augue. Donec eget tristique libero. 
             </p>
             <br/>
+                
+            <div class="social-icons">
+                <a href="{{ config('app.instagram') }}" target="_blank" class="instagram-icon"><i class="fa fa-instagram" ></i></a>
+                <a href="{{ config('app.facebook') }}" target="_blank" class="facebook-icon"><i class="fa fa-facebook"></i></a>
+                <a href="{{ config('app.linkedin') }}" target="_blank" class="linkedin-icon"><i class="fa fa-linkedin"></i></a>
+            </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-12">
             <div>

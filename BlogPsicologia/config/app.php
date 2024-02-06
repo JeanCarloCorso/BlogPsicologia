@@ -7,6 +7,9 @@ return [
     'telefone' => '+55 (49) 9 9170-7070',
     'telefoneNumero' => +5549991707070,
     'email' => 'email@dominio.com',
+    'instagram' => 'https://www.instagram.com/',
+    'facebook' => 'https://www.facebook.com/',
+    'linkedin' => 'https://www.linkedin.com/',
     /*
     |--------------------------------------------------------------------------
     | Application Name
