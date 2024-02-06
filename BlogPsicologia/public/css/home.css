@@ -79,15 +79,46 @@ hr.custon {
 }
 
 .span-resumo {
-    font-size: 0.9em;
-    color: #0c1347 !important;
+    font-size: 0.8em;
+    color: black !important;
     font-weight: bold;
     text-align: left;
 }
 
-.truncar-1l {
+.span-titulo {
+    font-size: 1.2em;
+    color: #FFD619 !important;
+    font-weight: bold;
+    text-align: left;
+}
+
+.truncar-2l {
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.truncar-6l {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.custom-img {
+    width: 110%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.com-margem {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*bloco do "Sobre Mim"*/
+

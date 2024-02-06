@@ -79,11 +79,11 @@
         @yield('foraContainer')
     </div>
 
-    <div class="content-below-nav">
-        @yield('carrousel')
+    <div class="container">
+        @yield('content')
     </div>
     <div class="container-fluid">
-        @yield('content')
+        @yield('content-fluid')
     </div>
   
     <footer class="border-top footer" style="background-color: #F9F9F9; color: black;">
