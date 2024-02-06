@@ -24,3 +24,7 @@ Route::get('/contato', function () {
 Route::get('/sobremim', function () {
     return view('sobreMim');
 })->name('sobre_mim');
+
+Route::get('/confirmacao', function () {
+    return view('confirmacaoMensagem');
+})->name('confirmacao');

@@ -1,0 +1,11 @@
+.custon-bloco-start {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
