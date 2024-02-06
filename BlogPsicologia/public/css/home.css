@@ -124,7 +124,7 @@ hr.custon {
 
 .custon-bloco2 {
     margin-top: 64px; 
-    margin-bottom: 64px;
+    margin-bottom: 10px;
     text-align: center; 
     background-color: #f1f1f1; 
 }
@@ -138,4 +138,16 @@ hr.custon {
 p.custon {
     text-align: left; 
     margin-left: 10px;
+}
+
+/*bloco do contato*/
+
+.btn-custon {
+    background-color: #FFD200;
+    color: white;
+}
+
+.btn-custon:hover {
+    background-color: #ffe055;
+    color: white;
 }
