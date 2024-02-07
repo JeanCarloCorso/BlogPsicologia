@@ -3,7 +3,6 @@
 @section('css')
     <link rel="stylesheet" href={{ asset('css/artigo.css') }}>
     <link rel="stylesheet" href={{ asset('css/titulosSecao.css') }}>
-    <link rel="stylesheet" href={{ asset('css/botao.css') }}>
 @endsection
 
 @section('content')
@@ -106,34 +105,87 @@
 <hr>
 <h5>Comentários:</h3>
 
-<div class="card-comentario">
-    <div class="card-body-comentario">
-      <form>
-        <div class="form-group mb-3">
-          <textarea class="form-control" id="comment" rows="4" placeholder="Escreva seu comentário aqui" onclick="showFormItems()"></textarea>
-        </div>
-        <div id="form-items" class="form-hidden">
-          <div class="row mb-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Seu Nome">
-            </div>
-            <div class="col">
-              <input type="email" class="form-control" placeholder="Seu Email">
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-lg btn-custon">Enviar Comentário</button>
-            <br/>
-            <br/>
-            <h6>* O e-mail não será publicado no site.<h6>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+@include('includes.comentario')
 
 <br/>
 
+<div class="card-comentarios">
+    <div class="card-body-comentario">
+        <div class="nome">Nome do user</div>
+        <div class="datahora">07/02/2024 14:10</div>
+        <br>
+        <div class="comentario">Exemplo de comentário postado por um leitor do blog</div>
+        <button class="link-button" onclick="toggleResposta('responder1')">Responder</button>
+        <br/>
+        <br/>
+        
+        <div class="responder" id="responder1">
+            <form>
+                <div class="form-group mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Escreva seu comentário aqui"></textarea>
+                </div>
+                <div id="form-items">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Seu Nome">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Seu Email">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-lg btn-custon">Enviar Comentário</button>
+                        <br/>
+                        <br/>
+                        <h6>* O e-mail não será publicado no site.<h6>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="card-comentarios">
+    <div class="card-body-comentario">
+        <div class="nome">Nome do user</div>
+        <div class="datahora">07/02/2024 14:10</div>
+        <br>
+        <div class="comentario">Exemplo de comentário postado por um leitor do blog</div>
+        <button class="link-button" onclick="toggleResposta('responder2')">Responder</button>
+        <br/>
+        <br/>
+        
+        <div class="responder" id="responder2">
+            <form>
+                <div class="form-group mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Escreva seu comentário aqui"></textarea>
+                </div>
+                <div id="form-items">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Seu Nome">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Seu Email">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-lg btn-custon">Enviar Comentário</button>
+                        <br/>
+                        <br/>
+                        <h6>* O e-mail não será publicado no site.<h6>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!--Resposta dos comentários-->
+        <div class="nome resposta">Nome do user</div>
+        <div class="datahora resposta">07/02/2024 14:10</div>
+        <div class="comentario resposta">Exemplo de comentário postado por um leitor do blog</div>
+    </div>
+</div>
+
 <script src={{ asset('js/artigo.js') }}></script> 
+
 @endsection

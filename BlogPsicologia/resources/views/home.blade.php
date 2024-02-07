@@ -27,7 +27,7 @@
     <div class="row g-3 justify-content-center custon-row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-12 com-margem">
             <div class="row g-3 justify-content-center">
-                <a href="/" class="btn mt-2 d-flex">
+                <a href="/artigo" class="btn mt-2 d-flex">
                     <div class="col-5">
                         <div class="card text-center bg-light">
                             <img class="custom-img" src="/site/img/homeBackground.png">
@@ -46,7 +46,7 @@
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-12 com-margem">
             <div class="row g-3 justify-content-center">
-                <a href="/" class="btn mt-2 d-flex">
+                <a href="/artigo" class="btn mt-2 d-flex">
                     <div class="col-5">
                         <div class="card text-center bg-light">
                             <img class="custom-img" src="/site/img/homeBackground.png">
@@ -65,7 +65,7 @@
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-12 com-margem">
             <div class="row g-3 justify-content-center">
-                <a href="/" class="btn mt-2 d-flex">
+                <a href="/artigo" class="btn mt-2 d-flex">
                     <div class="col-5">
                         <div class="card text-center bg-light">
                             <img class="custom-img" src="/site/img/homeBackground.png">
@@ -84,7 +84,7 @@
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-12 com-margem">
             <div class="row g-3 justify-content-center">
-                <a href="/" class="btn mt-2 d-flex">
+                <a href="/artigo" class="btn mt-2 d-flex">
                     <div class="col-5">
                         <div class="card text-center bg-light">
                             <img class="custom-img" src="/site/img/homeBackground.png">

@@ -60,18 +60,46 @@ p {
     font-weight: bold;
 }
 
-.card-comentario {
-    width: calc(90%);
+/*seção dos comentários*/
+
+.card-comentarios {
+    width: calc(80%);
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 15px;
     background-color: #ececec;
     padding: 15px
 }
-    
-.form-hidden {
+
+.nome {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.datahora {
+    font-size: 11px;
+}
+
+.comentario {
+    font-size: 15px;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #b19000;
+    cursor: pointer;
+    padding: 0;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+}
+
+.responder {
     display: none;
 }
 
-.form-visible {
-    display: block;
+.resposta {
+    padding-left: 5%;
 }

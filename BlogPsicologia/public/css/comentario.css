@@ -1,0 +1,19 @@
+.card-comentario {
+    width: calc(90%);
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ececec;
+    padding: 15px
+}
+
+.card-body-comentario {
+    font-family: Arial, sans-serif;
+}
+    
+.form-hidden {
+    display: none;
+}
+
+.form-visible {
+    display: block;
+}
