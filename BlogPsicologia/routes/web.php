@@ -28,3 +28,7 @@ Route::get('/sobremim', function () {
 Route::get('/confirmacao', function () {
     return view('confirmacaoMensagem');
 })->name('confirmacao');
+
+Route::get('/artigo', function () {
+    return view('artigo');
+})->name('artigo');

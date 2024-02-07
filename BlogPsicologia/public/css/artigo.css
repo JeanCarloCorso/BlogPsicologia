@@ -1,0 +1,77 @@
+.artigo {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.card {
+    width: 300px;
+    background-color: #ececec;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); 
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.date-square {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.day {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.month {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-comentario {
+    width: calc(90%);
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ececec;
+    padding: 15px
+}
+    
+.form-hidden {
+    display: none;
+}
+
+.form-visible {
+    display: block;
+}

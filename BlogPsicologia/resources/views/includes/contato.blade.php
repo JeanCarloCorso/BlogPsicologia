@@ -1,6 +1,7 @@
 @section('title','Contato')
 <link rel="stylesheet" href={{ asset('css/contato.css') }}>
 <link rel="stylesheet" href={{ asset('css/titulosSecao.css') }}>
+<link rel="stylesheet" href={{ asset('css/botao.css') }}>
 
 <div class="row g-3 custon-row-sobre justify-content-center">
     <form class="col-sm-10 col-md-8 col-lg-6" method="post" >
@@ -33,4 +34,4 @@
     </form>
 </div>
 
-<script src={{ asset('js/home.js') }}></script> 
+<script src={{ asset('js/contato.js') }}></script> 
