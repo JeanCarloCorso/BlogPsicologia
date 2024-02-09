@@ -32,3 +32,11 @@ Route::get('/confirmacao', function () {
 Route::get('/artigo', function () {
     return view('artigo');
 })->name('artigo');
+
+Route::get('/restrito/posts', function () {
+    return view('AreaRestrita/homeRestrito');
+})->name('ar_posts');
+
+Route::get('/meublog', function () {
+    return view('meuBlog');
+})->name('meu_blog');

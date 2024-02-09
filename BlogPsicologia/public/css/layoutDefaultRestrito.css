@@ -1,0 +1,132 @@
+.custom-nav {
+    background-color: #141A1B;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand:hover {
+    color: #dadada;
+}
+
+.custom-navbar-brand {
+    color: #FFFFFF; 
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif; 
+}
+
+.nav-item .nav-link:hover {
+    color: #FFD200 !important;
+    font-weight: bold;
+}
+
+.logo-image {
+    max-width: 100%; 
+    max-width: 40px; 
+    height: auto; 
+}
+
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.sidebar {
+    width: 190px;
+    height: 100vh;
+    background-color: #253238;
+    padding: 20px;
+    padding-top: 80px;
+    color: white;
+    position: fixed;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar.collapsed li a {
+    justify-content: center; 
+}
+
+.sidebar.collapsed li a span {
+    display: none;
+}
+
+.content {
+    margin-left: 175px;
+    margin-top: 70px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.bottom-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+.bottom-arrow:hover {
+    color: #dadada;
+}
+
+a:hover {
+    color: #dadada;
+}
+
+
+.sidebar {
+    transition: width 0.3s; /* Adiciona uma transição suave para a largura da barra lateral */
+}
+
+.sidebar.collapsed {
+    width: 70px; /* ou o valor desejado para a largura recolhida */
+}
+
+.bottom-arrow i {
+    transition: transform 0.3s, padding-left 0.3s; /* Adiciona uma transição suave para a rotação do ícone da seta e o padding à esquerda */
+    padding-left: 20px;
+}
+
+.content.expanded {
+    margin-left: 50px; /* ou o valor desejado para o espaçamento do conteúdo quando a barra lateral estiver recolhida */
+}
+
+
+.sidebar.collapsed .bottom-arrow i {
+    transform: rotateY(180deg); /* Gira o ícone quando a barra lateral está recolhida */
+    padding-left: 0;
+}
+
+
+.sidebar.collapsed .bottom-arrow {
+    transform: rotateY(180deg);
+    padding-left: 20px; /* Adiciona um espaço à esquerda para manter a posição das setas */
+}

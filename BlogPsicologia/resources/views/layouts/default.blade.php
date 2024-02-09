@@ -94,7 +94,7 @@
                     &copy; 2024 - Copyright CorsoSoftwares<br>
                 </div>
                 <div class="slide2 col-12 col-md-4 text-center">
-                    <a href="privacidade.show" class="text-decoration-none text-black">
+                    <a href="/" class="text-decoration-none text-black">
                         Início
                     </a><br>
                     <a href="termos.show" class="text-decoration-none text-black">
