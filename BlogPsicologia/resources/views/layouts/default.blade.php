@@ -32,7 +32,7 @@
                         <a href="/" class="nav-link text-black">INÍCIO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/categoria/mulher" class="nav-link text-black">MEU BLOG</a>
+                        <a href="{{ route('meu_blog') }}" class="nav-link text-black">MEU BLOG</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('sobre_mim') }}" class="nav-link text-black">SOBRE MIM</a>
@@ -71,7 +71,7 @@
         </button>
         <ul>
             <li><a href="/">Início</a></li>
-            <li><a href="/categoria/mulher">Meu Blog</a></li>
+            <li><a href="{{ route('meu_blog') }}">Meu Blog</a></li>
             <li><a href="{{ route('sobre_mim') }}">Sobre Mim</a></li>
         </ul>
     </div>
@@ -97,7 +97,7 @@
                     <a href="/" class="text-decoration-none text-black">
                         Início
                     </a><br>
-                    <a href="termos.show" class="text-decoration-none text-black">
+                    <a href="{{ route('meu_blog') }}" class="text-decoration-none text-black">
                         Meu Blog
                     </a><br>
                     <a href="{{ route('sobre_mim') }}" class="text-decoration-none text-black">
