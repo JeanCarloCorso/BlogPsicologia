@@ -1,4 +1,3 @@
-@section('title','Contato')
 <link rel="stylesheet" href={{ asset('css/contato.css') }}>
 <link rel="stylesheet" href={{ asset('css/titulosSecao.css') }}>
 <link rel="stylesheet" href={{ asset('css/botao.css') }}>

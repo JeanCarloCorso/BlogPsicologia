@@ -1,5 +1,7 @@
 @extends('layouts.default')
 
+@section('title', 'Meu Blog')
+
 @section('content-fluid')
 
 <div style="margin-top: 100px; ">
