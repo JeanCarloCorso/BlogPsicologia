@@ -49,14 +49,9 @@
     </nav>
     <div class="content">
       <!-- Conteúdo principal do site vai aqui -->
-      <h1>Conteúdo Principal</h1>
-      <p>Bem-vindo ao meu site!</p>
+      @yield('content')
     </div>
   </div>
-
-    <div class="container-fluid">
-        @yield('content-fluid')
-    </div>
   
     <script src={{ asset('site/bootstrap.bundle.js') }}></script>
     <script src={{ asset('js/defaultAr.js') }}></script> 

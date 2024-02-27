@@ -8,3 +8,15 @@ function toggleSidebar() {
     arrowIcon.classList.toggle('fa-angle-double-left');
     arrowIcon.classList.toggle('fa-angle-double-right');
 }
+
+function checkWindowSize() {
+    var sidebar = document.querySelector('.sidebar');
+            
+    if (window.innerWidth <= 768 && !sidebar.classList.contains('collapsed')) {
+        toggleSidebar();
+    }
+}
+
+window.addEventListener('resize', checkWindowSize);
+
+checkWindowSize();

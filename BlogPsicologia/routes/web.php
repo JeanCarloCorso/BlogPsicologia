@@ -33,6 +33,10 @@ Route::get('/artigo', function () {
     return view('artigo');
 })->name('artigo');
 
+Route::get('/restrito', function () {
+    return redirect()->route('ar_posts');
+})->name('ar');
+
 Route::get('/restrito/posts', function () {
     return view('AreaRestrita/homeRestrito');
 })->name('ar_posts');
@@ -40,3 +44,7 @@ Route::get('/restrito/posts', function () {
 Route::get('/meublog', function () {
     return view('meuBlog');
 })->name('meu_blog');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
