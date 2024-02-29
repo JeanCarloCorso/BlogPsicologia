@@ -1,6 +1,8 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 th, td {
@@ -32,6 +34,14 @@ a {
 }
 
 .clickable-row:hover {
-    background-color: #f8f9fa; /* Altere a cor conforme necessário */
+    background-color: #f8f9fa;
 }
 
+.ver-comentario {
+    color: blue;
+}
+
+.ver-comentario:hover {
+    text-decoration: underline;
+    color: blue;
+}

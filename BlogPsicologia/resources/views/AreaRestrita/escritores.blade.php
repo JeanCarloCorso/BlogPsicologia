@@ -11,7 +11,7 @@
 <div class="row"> 
     <div class="col-6">
         <div><!-- Botão para telas pequenas -->
-            <button class="btn btn-lg btn-custon">Adicionar Novo Post</button>
+            <button class="btn btn-lg btn-custon">Adicionar Novo Escritor</button>
         </div>
     </div>
     <div class="col-6">
@@ -27,17 +27,23 @@
 <br/>
 
 @php
-    $posts = [
+    $escritores = [
         (object) [
             'id' => 1,
-            'titulo' => 'Teste de post',
-            'data' => '08/02/2024 08:05:00 PM',
+            'nome' => 'William Shakespeare',
+            'descricao' => 'Renomado dramaturgo e poeta inglês do século XVI, Shakespeare é conhecido por suas obras atemporais, como "Romeu e Julieta" e "Hamlet',
             'url'  => route('login'), 
         ],
         (object) [
             'id' => 2,
-            'titulo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-            'data' => '09/10/2023 12:30:00 AM',
+            'nome' => 'Jane Austen',
+            'descricao' => 'Autora britânica do século XIX, Austen é celebrada por suas sagazes comédias sociais, incluindo "Orgulho e Preconceito" e "Emma',
+            'url'  => route('login'),
+        ],
+        (object) [
+            'id' => 2,
+            'nome' => 'Gabriel García Márquez',
+            'descricao' => 'Influente autor colombiano, García Márquez é aclamado pelo realismo mágico em obras como "Cem Anos de Solidão" e "O Amor nos Tempos do Cólera',
             'url'  => route('login'),
         ],
     ];
@@ -47,16 +53,16 @@
     <table>
         <thead>
             <tr>
-                <th>Título</th>
-                <th>Data</th>
+                <th>Nome</th>
+                <th>Descricão</th>
                 <th>Gerenciar</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($posts as $post)
-                <tr class="clickable-row" onclick="window.location='{{ $post->url }}';">
-                    <td class="left">{{ $post->titulo }}</td>
-                    <td>{{ $post->data }}</td>
+            @foreach ($escritores as $escritor)
+                <tr class="clickable-row" onclick="window.location='{{ $escritor->url }}';">
+                    <td class="left">{{ $escritor->nome }}</td>
+                    <td>{{ $escritor->descricao }}</td>
                     <td>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-trigger" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

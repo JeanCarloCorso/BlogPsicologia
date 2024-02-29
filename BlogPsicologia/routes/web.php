@@ -33,6 +33,14 @@ Route::get('/artigo', function () {
     return view('artigo');
 })->name('artigo');
 
+Route::get('/meublog', function () {
+    return view('meuBlog');
+})->name('meu_blog');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
 Route::get('/restrito', function () {
     return redirect()->route('ar_posts');
 })->name('ar');
@@ -41,10 +49,14 @@ Route::get('/restrito/posts', function () {
     return view('AreaRestrita/homeRestrito');
 })->name('ar_posts');
 
-Route::get('/meublog', function () {
-    return view('meuBlog');
-})->name('meu_blog');
+Route::get('/restrito/categorias', function () {
+    return view('AreaRestrita/categorias');
+})->name('ar_categorias');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/restrito/escritores', function () {
+    return view('AreaRestrita/escritores');
+})->name('ar_escritores');
+
+Route::get('/restrito/comentarios', function () {
+    return view('AreaRestrita/comentarios');
+})->name('ar_comentarios');

@@ -35,10 +35,10 @@
     <div class="container-fluid">
     <nav class="sidebar">
         <ul>
-            <li><a href="#"><i class="fas fa-list"></i><span> Postagens</span></a></li>
-            <li><a href="#"><i class="fas fa-folder-open"></i><span> Categorias</span></a></li>
-            <li><a href="#"><i class="fas fa-pen-to-square"></i><span> Escritores</span></a></li>
-            <li><a href="#"><i class="fas fa-comments"></i><span> Comentários</span></a></li>
+            <li><a href="{{ route('ar_posts') }}"><i class="fas fa-list"></i><span> Postagens</span></a></li>
+            <li><a href="{{ route('ar_categorias') }}"><i class="fas fa-folder-open"></i><span> Categorias</span></a></li>
+            <li><a href="{{ route('ar_escritores') }}"><i class="fas fa-pen-to-square"></i><span> Escritores</span></a></li>
+            <li><a href="{{ route('ar_comentarios') }}"><i class="fas fa-comments"></i><span> Comentários</span></a></li>
             <li><a href="#"><i class="fas fa-envelope"></i><span> Mensagens</span></a></li>
             <li><a href="#"><i class="fas fa-lock"></i><span> Alterar Senha</span></a></li>
             <li><a href="#"><i class="fas fa-door-open"></i><span> Sair</span></a></li>

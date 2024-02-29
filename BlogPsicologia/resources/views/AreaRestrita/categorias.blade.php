@@ -11,7 +11,7 @@
 <div class="row"> 
     <div class="col-6">
         <div><!-- Botão para telas pequenas -->
-            <button class="btn btn-lg btn-custon">Adicionar Novo Post</button>
+            <button class="btn btn-lg btn-custon">Adicionar Nova Categoria</button>
         </div>
     </div>
     <div class="col-6">
@@ -27,17 +27,17 @@
 <br/>
 
 @php
-    $posts = [
+    $categorias = [
         (object) [
             'id' => 1,
-            'titulo' => 'Teste de post',
-            'data' => '08/02/2024 08:05:00 PM',
+            'titulo' => 'Teste',
+            'descricao' => 'Categoria de teste usada para teste',
             'url'  => route('login'), 
         ],
         (object) [
             'id' => 2,
-            'titulo' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-            'data' => '09/10/2023 12:30:00 AM',
+            'titulo' => 'Lorem ipsum',
+            'descricao' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
             'url'  => route('login'),
         ],
     ];
@@ -48,15 +48,15 @@
         <thead>
             <tr>
                 <th>Título</th>
-                <th>Data</th>
+                <th>Descricão</th>
                 <th>Gerenciar</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($posts as $post)
-                <tr class="clickable-row" onclick="window.location='{{ $post->url }}';">
-                    <td class="left">{{ $post->titulo }}</td>
-                    <td>{{ $post->data }}</td>
+            @foreach ($categorias as $categoria)
+                <tr class="clickable-row" onclick="window.location='{{ $categoria->url }}';">
+                    <td class="left">{{ $categoria->titulo }}</td>
+                    <td>{{ $categoria->descricao }}</td>
                     <td>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-trigger" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
